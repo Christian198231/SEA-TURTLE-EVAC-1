@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="turtle.css">
+    <link rel="icon" type="image/png" href="web-logo.png">
+    <title>SEA TURTLE EVAC - DONATE</title>
+</head>
+<body>
+    <div id="donate" class="donate-box">
+        <center>
+        <img src="donate-turtle.png" alt="Donate Turtle">
+        <h3 onclick="amount()">$25.00</h3>
+        <h3 onclick="amount()">$50.00</h3>
+        <h3 onclick="amount()">$100.00</h3>
+        <input type="number" autocomplete="off" placeholder="Other Amount">
+        <br><br><br>
+        <select class="drop-down" name="Foundation">
+            <option value="optional">(Optional) Use this donation for</option>
+            <option value="Capital Campaign">Capital Campaign</option>
+            <option value="Sea Turtle Rehabilitation">Sea Turte Rehabilitation</option>
+            <option value="Resident Sea Turtle">Resident Sea Turtle</option>
+            <option value="General Donation">General Donation</option>
+        </select>
+        <br><br><br>
+        <input type="checkbox">
+        <h4>Make this a monthly donation</h4>
+        <br><br>
+        <button onclick="payDecline()" class="button-1"><h2>DONATE WITH PAYPAL</h2></button>
+        <br><br>
+        <button onclick="payDecline2()" class="button-2"><h2>DONATE WITH DEBIT OR CREDIT CARD</h2></button>
+        <br><br><br>
+        <a href="index.html">
+        <h2 class="cancel">Cancel and return to <span>SEA TURTLE EVAC</span></h2>
+        </a>
+        <br><br>
+        </center>
+    </div> 
+
+    <script src="script.js"></script>
+
+</body>
+</html>
