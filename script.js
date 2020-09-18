@@ -27,61 +27,39 @@ function showSlides() {
   setTimeout(showSlides, 2500); 
 }
 
-// FAQS
-
-var showing = false;
-
-function ans1(){
-    if(!showing){
-        showing = true;
-        document.getElementById('text-ans-1').style.display = 'block';
-    }
-    else{
-        showing = false;
-        document.getElementById('text-ans-1').style.display = 'none';
-    }
-}
-
-function ans2(){
-    if(!showing){
-        showing = true;
-        document.getElementById('text-ans-2').style.display = 'block';
-    }
-    else{
-        showing = false;
-        document.getElementById('text-ans-2').style.display = 'none';
-    }
-}
-
-function ans3(){
-    if(!showing){
-        showing = true;
-        document.getElementById('text-ans-3').style.display = 'block';
-    }
-    else{
-        showing = false;
-        document.getElementById('text-ans-3').style.display = 'none';
-    }
-}
-
-function ans4(){
-    if(!showing){
-        showing = true;
-        document.getElementById('text-ans-4').style.display = 'block';
-    }
-    else{
-        showing = false;
-        document.getElementById('text-ans-4').style.display = 'none';
-    }
-}
-
-function ans5(){
-    if(!showing){
-        showing = true;
-        document.getElementById('text-ans-5').style.display = 'block';
-    }
-    else{
-        showing = false;
-        document.getElementById('text-ans-5').style.display = 'none';
-    }
-}
+// FAQ Dropdown
+$("#q1").click(function() {
+    if ($("#ans1").is(":hidden")) {
+        $("#ans1").slideDown("slow");
+    } else {
+        $("#ans1").slideUp("slow");
+    };
+});
+$("#q2").click(function() {
+    if ($("#ans2").is(":hidden")) {
+        $("#ans2").slideDown("slow");
+    } else {
+        $("#ans2").slideUp("slow");
+    };
+});
+$("#q3").click(function() {
+    if ($("#ans3").is(":hidden")) {
+        $("#ans3").slideDown("slow");
+    } else {
+        $("#ans3").slideUp("slow");
+    };
+});
+$("#q4").click(function() {
+    if ($("#ans4").is(":hidden")) {
+        $("#ans4").slideDown("slow");
+    } else {
+        $("#ans4").slideUp("slow");
+    };
+});
+$("#q5").click(function() {
+    if ($("#ans5").is(":hidden")) {
+        $("#ans5").slideDown("slow");
+    } else {
+        $("#ans5").slideUp("slow");
+    };
+});

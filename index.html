@@ -28,10 +28,10 @@
     <br>
     <h1>SEA TURTLE EVAC</h1>
     <br><br><br>
-        <img class="mySlides" src="slide-turtle-1.jpg" alt="Turtle">
-        <img class="mySlides" src="slide-turtle-2.jpg" alt="Turtle">
-        <img class="mySlides" src="slide-turtle-3.jpg" alt="Turtle">
-        <img class="mySlides" src="slide-turtle-4.jpg" alt="Turtle">
+        <img class="mySlides" src="images/slide-turtle-1.jpg" alt="Turtle">
+        <img class="mySlides" src="images/slide-turtle-2.jpg" alt="Turtle">
+        <img class="mySlides" src="images/slide-turtle-3.jpg" alt="Turtle">
+        <img class="mySlides" src="images/slide-turtle-4.jpg" alt="Turtle">
     </div>
     </div>
     <div id="about" class="about">
@@ -41,7 +41,7 @@
         <br><br>
         <p>We want to rehabilitate, release injured sea turtles, and of course educate the public and assist with conservation efforts for all marine life.</p>
         <br><br>
-        <img src="about-img.jpg" alt="Sea turtle">
+        <img src="images/about-img.jpg" alt="Sea turtle">
         <br><br>
         <p>We own a rehabilitation center in Vacaville, Ca. We allow visitors from all over the world to come and see our rescued turtles, see what we do behind the scenes, learn the ways they live in the wild, and learn how we rescue the turtles that need our help.</p>
         <br><br>
@@ -83,7 +83,7 @@
         <button><h3>DONATE NOW</h3></button>
         </a>
         <br><br><br>
-        <img src="donate-turtle.jpg" alt="Sea turtle"> 
+        <img src="images/donate-turtle.jpg" alt="Sea turtle"> 
     </div>
     
     <div id="conservation" class="conservation">
@@ -96,7 +96,7 @@
             <br><br>
         If you would like to start scouting sea turtle nesting grounds voluntarily please contact <abbr>seaturtleevacscouting@gmail.com</abbr>
         </p>
-        <img src="conservation-turtle.jpg" alt="Turtle in water">
+        <img src="images/conservation-turtle.jpg" alt="Turtle in water">
         </div>
     </div>
 
@@ -142,64 +142,35 @@
     </div>
 
     <!-- Add animation -->
-    <div id="faq" class="faq">
+    <div class="faq">
         <h1>FAQS</h1>   
         <br><br>
-        <div id="faq" class="questions-container">
-
-            <h2 onclick="ans1()">Can I touch the sea turtles?</h2>
-            <p id="text-ans-1 slide">No. It is not allowed to touch the sea turtles or put your hands in the water. Sea turtles have powerful jaws and strong bites. Visitors could potentially be bitten.</p>
-
+        <div id="q1" class="questions-container">
+            <h2>Can I touch the sea turtles?</h2>
         </div>
-
+        <p id="ans1">No. It is not allowed to touch the sea turtles or put your hands in the water. Sea turtles have powerful jaws and strong bites. Visitors could potentially be bitten.</p>
         <br><br><br>
-
-        <div class="questions-container">
-
-            <h2 onclick="ans2()">Can I feed the sea turtles?</h2>
-            <p id="text-ans-2 slide">No, visitors are not permitted to feed the sea turtles. We have 1-2 feedings per day that the public is welcome to watch.</p>
-
+        <div id="q2" class="questions-container">
+            <h2>Can I feed the sea turtles?</h2>
         </div>
-
+        <p id="ans2">No, visitors are not permitted to feed the sea turtles. We have 1-2 feedings per day that the public is welcome to watch.</p>
         <br><br><br>
-
-        <div class="questions-container">
-
-            <h2 onclick="ans3()">Do, I have to pay for parking?</h2>
-            <p id="text-ans-3 slide">Parking at <span>SEA TURTLE EVAC</span>, during open hours, is free to our visitors. Parking is available next to both the Rehabilitation and Education Centers.</p>
-
+        <div id="q3" class="questions-container">
+            <h2>Do, I have to pay for parking?</h2>
         </div>
-
+        <p id="ans3">Parking at <span>SEA TURTLE EVAC</span>, during open hours, is free to our visitors. Parking is available next to both the Rehabilitation and Education Centers.</p>
         <br><br><br>
-
-        <div class="questions-container">
-
-            <h2 onclick="ans4()">Do you sell food or drinks in the facility?</h2>
-            <p id="text-ans-4 slide">Yes, right past the main entrance we have a, open to the public cafeteria.</p>
-
+        <div id="q4" class="questions-container">
+            <h2>Do you sell food or drinks in the facility?</h2>
         </div>
-
+        <p id="ans4">Yes, right past the main entrance we have a, open to the public cafeteria.</p>
         <br><br><br>
-
-        <div class="questions-container">
-
-            <h2 onclick="ans5()">Do you accept volunteers?</h2>
-            <p id="text-ans-5 slide">Yes! Volunteers are an essential part of our <span>SEA TURTLE EVAC</span> family! We accept applications for volunteers that will be here for a minimum of 3 months. </p>
-
+        <div id="q5" class="questions-container">
+            <h2>Do you accept volunteers?</h2>
         </div>
-
+        <p id="ans5">Yes! Volunteers are an essential part of our <span>SEA TURTLE EVAC</span> family! We accept applications for volunteers that will be here for a minimum of 3 months. </p>
     </div>
-
-    <script>
-        $( "#faq" ).click(function() {
-            if($("#text-ans-1").is(":hidden")){
-                $( "#slide" ).slideDown( "slow");
-            } else{
-                $("#slide").hide();
-            }
-            });
-    </script>
-
+    <br><br><br>
     <script src="script.js"></script>
 
 </body>
